@@ -6,10 +6,23 @@
     <title> Clínica SherryMals</title>
     <link rel="shortcut icon" href="imagenes/iconoTitulo.png">
     <link rel="stylesheet" href="css/Maquetacion Pagina Web.css" />
-   <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-</head>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet"> 
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
   </head>
+ 
   <body>
 
 
@@ -119,20 +132,21 @@
 
     <div>
       <body class="htmlNoPages">
-        <a href="Paginas Web/Pagina Politica.html">
-        <div class="gwd-div-jk3j">
+        <a href="Paginas Web/Pagina Politica.html" target="_blank">
+        <div id="perrito" class="gwd-div-jk3j">
           <img style="float: right;margin-left: 1140px; margin-top: 100px;" src="imagenes/perrito.png" class="gwd-img-y2ne gwd-gen-xwrdgwdanimation">
         </div>
-        <p style="float: right;margin-left: 1140px;margin-top: 100px;" class="gwd-p-198z">Hazme click!</p>
+        <p id="textoPerrito" style="float: right;margin-left: 1140px;margin-top: 100px;" class="gwd-p-198z">Hazme click!</p>
       </a>
       </div>
+
       <div>
         <body class="htmlNoPages">
-          <div class="gwd-div-jk3j">
-            <a href="Paginas Web/Pagina Cookies.html">
-            <img style="float: left;margin-left: -370px; margin-top: 100px;" src="imagenes/gatito.png" class="gwd-img-y2ne gwd-gen-xwrdgwdanimation">
+          <div class="gwd-div-jk3j" id="gatito">
+            <a href="Paginas Web/Pagina Cookies.html" target="_blank">
+            <img style="float: left;margin-left: -370px; margin-top: 100px; position: absolute;" src="imagenes/gatito.png" class="gwd-img-y2ne gwd-gen-xwrdgwdanimation">
           </div>
-          <p style="float: left;margin-left:-345px;margin-top: 100px;" class="gwd-p-198z">Hazme click!</p>
+          <p id="textoGatito" style="float: left;margin-left:-345px;margin-top: 100px;" class="gwd-p-198z">Hazme click!</p>
         </a>
       </div>
   
@@ -415,4 +429,25 @@ body {
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script>
+  document.getElementById("gatito").addEventListener("click",ocultar1,false);
+  document.getElementById("perrito").addEventListener("click",ocultar2,false);
+
+  function ocultar1(){
+
+    document.getElementById("gatito").style.display = "none";
+    document.getElementById("textoGatito").style.display = "none";
+    
+  }
+
+  function ocultar2(){
+
+    document.getElementById("perrito").style.display = "none";
+    document.getElementById("textoPerrito").style.display = "none";
+    
+  }
+
+</script>
 </body>
